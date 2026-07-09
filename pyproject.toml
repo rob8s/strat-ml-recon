@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stratml"
+version = "0.1.0"
+description = "Transform fluviodeltaic experimental data and apply ML to reconstruct stratigraphic vacuities."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+]
+
+[tool.setuptools]
+packages = ["stratml", "stratml.preprocessing", "stratml.modeling"]
